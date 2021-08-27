@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: nexa;
+}
+
+.parentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.parentContainer__left,
+.parentContainer__right {
+  width: 50%;
+  height: 100vh;
+}
+
+.parentContainer__right {
+  padding: 10px 15px;
+  overflow-y: scroll;
+}
+
+.parentContainer__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(102, 102, 102);
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.submitForm__fields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.submitForm__fields > input[type="text"] {
+  font-size: 16px;
+  outline: none;
+  margin-top: 10px;
+  border: 0;
+  border-bottom: 1px solid rgb(184, 182, 182);
+}
+
+.submitForm__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.submitForm__buttons > input[type="button"] {
+  margin: 10px 15px 0px 15px;
+  padding: 8px 18px;
+  outline: none;
+  border: 0;
+  background-color: orange;
+  border-radius: 4px;
+}
+
+.listUnicorn {
+  display: flex;
+  flex-direction: column;
+  /* align-items: stretch; */
+}
+
+.listUnicorn__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.listUnicorn__subContainer {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.listUnicorn__heading {
+  background-color: rgb(67, 67, 67); /*orchid*/
+  width: 10%;
+  /* flex-grow: 1; */
+  /* padding: 10px;
+  border: 1px solid white; */
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px 0 0 5px;
+}
+
+.listUnicorn__data {
+  background-color: rgb(240, 242, 243) /*rgb(123, 205, 230)*/;
+  width: 90%;
+  padding-left: 5px;
+  /* border: 1px solid white; */
+  /* flex-grow: 10; */
+  /* padding: 5px; */
+}
